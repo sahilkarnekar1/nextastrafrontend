@@ -1,1 +1,1 @@
-export const API_BASE_URL = 'http://localhost:5000/api'; // Replace with your actual API base URL
+export const API_BASE_URL = 'https://nextastrabackend.vercel.app/api'; // Replace with your actual API base URL
