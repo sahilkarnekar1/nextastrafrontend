@@ -1,0 +1,32 @@
+.image-table-container {
+    padding: 20px;
+  }
+  
+  .image-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .image-table th,
+  .image-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .image-table img {
+    border-radius: 4px;
+  }
+  
+  .delete-btn {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
