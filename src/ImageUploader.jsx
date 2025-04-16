@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 import axios from "axios"
 import ImageTable from './ImageTable.jsx';
 import ClipLoader from "react-spinners/ClipLoader";
+import { useNavigate } from 'react-router-dom';
 
 const App = () => {
   const [image, setImage] = useState(null);
@@ -15,6 +16,13 @@ const App = () => {
   const [greenRects, setGreenRects] = useState([]);
   const [loading, setLoading] = useState(false);
   const stageRef = useRef();
+  const navigate = useNavigate();
+
+useEffect(()=>{
+if(!localStorage.getItem("authToken")){
+  navigate("/login")
+}
+},[])
 
   useEffect(() => {
     if (image) {
