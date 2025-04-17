@@ -195,7 +195,7 @@ if(!localStorage.getItem("authToken")){
           border: 'none',
           borderRadius: '5px',
         }}
-        onClick={sendImageToAPI} // API call on button click
+        onClick={sendImageToAPI} 
       >
         Send Image to API
       </button>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ImageTable.css'; // optional styling
+import './ImageTable.css';
 import { toast } from 'react-toastify';
 import { API_BASE_URL } from './api/api';
 
@@ -8,7 +8,7 @@ const ImageTable = () => {
   const [images, setImages] = useState([]);
   const token = localStorage.getItem('authToken');
 
-  // Fetch images on mount
+
   useEffect(() => {
     fetchImages();
   }, []);
@@ -35,7 +35,7 @@ const ImageTable = () => {
         }
       });
       toast.success('Image deleted');
-      setImages(images.filter(img => img._id !== id)); // remove from UI
+      setImages(images.filter(img => img._id !== id)); 
     } catch (error) {
       console.error('Error deleting image:', error);
       toast.error('Failed to delete image');

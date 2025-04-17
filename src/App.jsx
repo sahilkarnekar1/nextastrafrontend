@@ -3,7 +3,7 @@ import RegistrationPage from './pages/RegistrationPage';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import ImageUploader from './ImageUploader';
-import './App.css'; // Ensure to import the CSS for styling
+import './App.css';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
